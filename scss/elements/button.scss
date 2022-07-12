@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 100px;
+  background-color: transparent;
+  color: $color-secondary;
+  outline: none;
+  border: 0.2px solid $color-secondary;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background-color: #de4d5a;
+    color: #fff;
+  }
+
+  &__filled {
+    background-color: $color-secondary;
+    border: none;
+    transition: all .2s ease-in-out;
+    color: #fff;
+
+    &:hover {
+      background-color: #ee293a;
+    }
+  }
+}

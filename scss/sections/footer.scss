@@ -1,0 +1,64 @@
+.footer {
+  padding: 30px;
+  background-color: #494949;
+  color: #fff;
+
+  &__inner {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  &__info {
+    font-size: $font-size-sm;
+
+    &-nav {
+      width: 500px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      &-item {
+        padding-left: 30px;
+        text-align: left;
+        font-size: 14px;
+
+        & > h4 {
+          margin-bottom: 10px;
+        }
+        
+        & > ul {
+          & > li {
+            & > a {
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-list {
+      text-align: left;
+    }
+  }
+
+  &__contacts {
+    text-align: left;
+
+    & > a {
+      font-weight: 700;
+    }
+
+    & > span {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 7px;
+
+      & > i {
+        margin-right: 5px;
+      }
+    }
+  }
+}
